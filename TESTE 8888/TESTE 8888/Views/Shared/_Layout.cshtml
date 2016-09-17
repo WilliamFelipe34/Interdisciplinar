@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="../../Content/bootstrap.min.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            
+            <div class="navbar-header" style="margin-top:70px">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/FTgo/Index">FTGo</a>
+            </div>
+
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" style="margin-top:70px">
+                    <li><a href="#">Ache o mais proximo <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Cadastro</a></li>
+                    <li><a href="#">Contato</a></li>
+                  </ul>
+               
+                <form class="navbar-form navbar-left">
+                  <!--Inicio da parte de Login--> 
+
+                    <!--Verificar como colocar essa parte de login no canto superior direito-->
+                        <fieldset class="col-xs-push-12">
+
+                            <!-- Parte de digigtar o email-->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="textinput">Email:</label>
+                                <div class="col-md-4">
+                                    <input name="textinput" class="form-control input-md" id="textinput" type="text">
+
+                                </div>
+                            </div>
+                            <br/>
+                            <!-- Parte de digitar a senha-->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="passwordinput">Senha:</label>
+                                <div class="col-md-4">
+                                    <input name="passwordinput" class="form-control input-md" id="passwordinput" type="password">
+
+                                </div>
+                            </div>
+                            <br/>
+                            <!-- Botão de entrar -->
+                            <div class="form-group" style="margin-left:170px">
+                                <label class="col-md-4 control-label" for="singlebutton"></label>
+                                <div class="col-md-4">
+                                    <button name="singlebutton" class="btn btn-success" id="singlebutton">Entar</button>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    <!--Fim do login-->
+                    </form>
+                
+            </div>
+        </div>
+        </nav>
+
+    <div class="col-lg-2" style="margin-left:0px">
+        <div class="list-group">
+            <a href="#" class="list-group-item">Decidir</a>
+            <a href="#" class="list-group-item">Decidir</a>
+            <a href="#" class="list-group-item">Decidir</a>
+            <a href="#" class="list-group-item">Decidir</a>
+            <a href="#" class="list-group-item">Decidir</a>
+        </div>
+    </div>
+
+
+   
+        <!-- jQuery -->
+        <script src="~/scripts/jquery-1.9.1.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="~/scripts/bootstrap.min.js"></script>
+
+    
+        <div>
+            @RenderBody()
+        </div>
+</body>
+</html>
